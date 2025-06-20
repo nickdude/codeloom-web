@@ -4,6 +4,18 @@ import { Helmet } from "react-helmet";
 const HeroSection = () => {
   return (
     <>
+      <Helmet>
+        <title>Codeloom Studio | Design-first Development</title>
+        <meta
+          name="description"
+          content="We craft stunning websites and digital products focused on results. Boost your brand's growth with us!"
+        />
+        <meta
+          name="keywords"
+          content="UI/UX, Web Design, Development, React, Codeloom"
+        />
+        <link rel="canonical" href="https://codeloom.studio" />
+      </Helmet>
       <section className="bg-white pt-28 pb-16 px-4 text-center">
         {/* Top Line */}
         <p className="font-inter font-medium text-[14.75px] leading-[19.2px] text-brandDark flex items-center justify-center gap-2">
