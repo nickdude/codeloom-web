@@ -42,8 +42,8 @@ const HelpSection = () => {
   return (
     <section className="py-10 bg-white">
       {/* Horizontal scroll image section */}
-      <div className="overflow-x-auto scrollbar-hide animate-scroll px-4">
-        <div className="flex gap-6 w-max">
+      <div className="overflow-x-auto scrollbar-hide px-4">
+        <div className="flex gap-6 w-max animate-scroll">
           {images.map((img, index) => (
             <div
               key={index}
