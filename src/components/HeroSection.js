@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import HeroRotatingText from "./HeroRotatingText";
 
 const HeroSection = () => {
   return (
@@ -24,11 +25,12 @@ const HeroSection = () => {
         </p>
 
         {/* Main Heading */}
-        <h1 className="font-grotesk font-medium text-[42px] sm:text-[49.36px] leading-[125%] tracking-[-1.04px] text-center mt-4">
+        <HeroRotatingText />
+        {/* <h1 className="font-grotesk font-medium text-[42px] sm:text-[49.36px] leading-[125%] tracking-[-1.04px] text-center mt-4">
           <span className="text-black">Your Development partner</span>
           <br />
           <span className="text-brand">for Real Business Impact</span>
-        </h1>
+        </h1> */}
 
         {/* Subtext */}
         <p className="font-inter font-small text-[16px] leading-[24px] max-w-2xl mx-auto mt-6 text-brandDark">

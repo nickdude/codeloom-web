@@ -28,7 +28,7 @@ const Navbar = () => {
         />
         <link rel="canonical" href="https://codeloom.studio" />
       </Helmet>
-      <nav className="fixed w-full z-10 bg-gradient-to-b from-white/90 via-white/60 to-white/20 backdrop-blur-md">
+      <nav className="fixed w-full z-10 bg-gradient-to-b from-white/20 backdrop-blur-lg">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">

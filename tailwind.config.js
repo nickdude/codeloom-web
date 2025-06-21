@@ -6,6 +6,10 @@ module.exports = {
         brand: "#F54A00",
         brandDark: "#0B254B",
         brandAccent: "#F54A00",
+        burntOrange: "#C43B00",
+      },
+      borderColor: {
+        burntOrange: "#c43b00",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
@@ -14,6 +18,9 @@ module.exports = {
       animation: {
         scroll: "scroll 25s linear infinite",
         scrollReverse: "scrollReverse 25s linear infinite",
+      },
+      transitionDuration: {
+        600: "600ms",
       },
       keyframes: {
         scroll: {
