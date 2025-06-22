@@ -2,7 +2,19 @@ import React from "react";
 import { Helmet } from "react-helmet";
 
 const HelpSection = () => {
-  const images = ["help1.svg", "help1.svg", "help1.svg", "help1.svg"];
+  const images = [
+    "help1.svg",
+    "help2.svg",
+    "help3.svg",
+    "help4.svg",
+    "help5.svg",
+    "help1.svg",
+    "help2.svg",
+    "help3.svg",
+    "help4.svg",
+    "help5.svg",
+    "help1.svg",
+  ];
 
   const columns = [
     {

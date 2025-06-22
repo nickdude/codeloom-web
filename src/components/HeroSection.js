@@ -19,7 +19,7 @@ const HeroSection = () => {
       </Helmet>
       <section className="bg-white pt-28 pb-16 px-4 text-center">
         {/* Top Line */}
-        <p className="font-inter font-medium text-[14.75px] leading-[19.2px] text-brandDark flex items-center justify-center gap-2">
+        <p className="font-inter font-medium text-[14px] leading-[19.2px] text-brandDark flex items-center justify-center gap-1">
           <img src="./assets/flash.svg" alt="Icon" className="w-4 h-4" />
           We are Design, Development & Marketing Studio
         </p>
