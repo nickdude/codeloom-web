@@ -16,7 +16,9 @@ const ToolsSection = () => {
         />
         <link rel='canonical' href='https://codeloom.studio' />
       </Helmet>
-      <section className='w-full px-4 sm:px-8 py-12 bg-white items-center flex flex-col'>
+      <section
+        id='tech-stack'
+        className='w-full px-4 sm:px-8 py-14 bg-white items-center flex flex-col'>
         <button className='bg-white text-black border border-brand font-inter font-medium text-[12px] leading-[16px] px-5 py-2 rounded-md hover:bg-gray-100 transition'>
           Our Tech Stack
         </button>

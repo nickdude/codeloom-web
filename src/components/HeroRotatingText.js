@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-const words = ["Development", "Design", "Marketing"];
+const words = ["Development", "Ui/Ux\u00A0Design", "Marketing"];
 
 export default function HeroRotatingText() {
   const [index, setIndex] = useState(0);

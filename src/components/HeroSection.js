@@ -3,6 +3,19 @@ import { Helmet } from "react-helmet";
 import HeroRotatingText from "./HeroRotatingText";
 
 const HeroSection = () => {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const navbarHeight = 80; // Approximate navbar height
+      const elementPosition = element.offsetTop - navbarHeight;
+
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <>
       <Helmet>
@@ -17,7 +30,7 @@ const HeroSection = () => {
         />
         <link rel='canonical' href='https://codeloom.studio' />
       </Helmet>
-      <section className='bg-white pt-32 pb-16 px-4 text-center'>
+      <section id='hero' className='bg-white pt-32 pb-16 px-4 text-center'>
         {/* Top Line */}
         <p className='font-inter font-medium text-[14px] leading-[19.2px] text-brandDark flex items-center justify-center gap-1'>
           <img src='./assets/flash.svg' alt='Icon' className='w-4 h-4' />
@@ -35,12 +48,16 @@ const HeroSection = () => {
 
         {/* CTA Buttons */}
         <div className='mt-6 flex justify-center gap-4 flex-wrap'>
-          <button className='bg-brand text-white font-inter font-medium text-[12px] leading-[15px] px-6 py-2 rounded-md hover:bg-orange-700 transition flex items-center gap-2 shadow-inner'>
+          <button
+            onClick={() => scrollToSection("contact")}
+            className='bg-brand text-white font-inter font-medium text-[12px] leading-[15px] px-6 py-2 rounded-md hover:bg-orange-700 transition flex items-center gap-2 shadow-inner'>
             <img src='./assets/cube.svg' alt='cube' className='w-4 h-4' />
             Book Intro Call
           </button>
 
-          <button className='bg-white text-brandDark border border-brand font-inter font-medium text-[12px] leading-[15px] px-6 py-2 rounded-md hover:bg-gray-100 transition flex items-center gap-2 shadow-inner'>
+          <button
+            onClick={() => scrollToSection("contact")}
+            className='bg-white text-brandDark border border-brand font-inter font-medium text-[12px] leading-[15px] px-6 py-2 rounded-md hover:bg-gray-100 transition flex items-center gap-2 shadow-inner'>
             Book on
             <img
               src='./assets/calendly_logo.svg'

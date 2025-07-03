@@ -32,6 +32,9 @@ module.exports = {
           "100%": { transform: "translateX(0)" },
         },
       },
+      scrollBehavior: {
+        smooth: "smooth",
+      },
     },
   },
   plugins: [],
