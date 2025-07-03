@@ -58,7 +58,7 @@ const Navbar = () => {
             <img
               src='./assets/codeloom-logo.svg'
               alt='Logo'
-              className='h-6 w-auto'
+              className='h-5 w-auto'
             />
           </div>
 

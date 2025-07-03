@@ -68,13 +68,13 @@ const HeroSection = () => {
         </div>
 
         {/* Trusted By */}
-        <p className='font-inter font-small text-[16px] leading-[24px] text-gray-500 mt-20 tracking-[-0.32px]'>
+        <p className='font-inter font-small text-[14px] leading-[24px] text-gray-500 mt-20 tracking-[-0.32px]'>
           Trusted by 40+ founders and counting
         </p>
 
         {/* Logo Marquee */}
-        <div className='mt-16 overflow-hidden relative'>
-          <div className='whitespace-nowrap flex gap-8 justify-center'>
+        <div className='mt-8 overflow-hidden relative'>
+          <div className='whitespace-nowrap flex gap-6 justify-center'>
             {/* Add more logos as needed */}
             {[
               "logo1.svg",
@@ -90,7 +90,7 @@ const HeroSection = () => {
                 key={index}
                 src={`./assets/${logo}`}
                 alt={`Logo ${index + 1}`}
-                className='h-8 inline-block'
+                className='h-20 inline-block'
               />
             ))}
           </div>
