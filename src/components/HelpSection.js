@@ -86,7 +86,7 @@ const HelpSection = () => {
 
         {/* Button & subheading */}
         <div id='help' className='mt-20 text-center px-4'>
-          <button className='bg-white text-black border border-brand font-inter font-medium text-[12px] leading-[16px] px-5 py-2 rounded-md hover:bg-gray-100 transition'>
+          <button className='bg-white text-black border border-grey font-inter font-medium text-[12px] leading-[16px] px-5 py-2 rounded-md hover:bg-gray-100 transition'>
             How we help you grow?
           </button>
 

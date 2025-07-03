@@ -32,7 +32,7 @@ const Result = () => {
       <section id='results' className='max-w-7xl mx-auto px-4 py-1'>
         {/* Centered Heading */}
         <div className='text-center mb-10'>
-          <button className='bg-white text-black border border-brand font-inter font-medium text-[12px] leading-[16px] px-5 py-2 rounded-md hover:bg-gray-100 transition'>
+          <button className='bg-white text-black border border-grey font-inter font-medium text-[12px] leading-[16px] px-5 py-2 rounded-md hover:bg-gray-100 transition'>
             Our Results
           </button>
 

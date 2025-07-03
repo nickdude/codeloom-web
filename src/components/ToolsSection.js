@@ -19,7 +19,7 @@ const ToolsSection = () => {
       <section
         id='tech-stack'
         className='w-full px-4 sm:px-8 py-14 bg-white items-center flex flex-col text-center'>
-        <button className='bg-white text-black border border-brand font-inter font-medium text-[12px] leading-[16px] px-5 py-2 rounded-md hover:bg-gray-100 transition'>
+        <button className='bg-white text-black border border-grey font-inter font-medium text-[12px] leading-[16px] px-5 py-2 rounded-md hover:bg-gray-100 transition'>
           Our Tech Stack
         </button>
         {/* Heading */}
