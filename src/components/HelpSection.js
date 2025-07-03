@@ -90,7 +90,7 @@ const HelpSection = () => {
             How we help you grow?
           </button>
 
-          <p className='mt-14 font-inter text-[24px] md:text-[30px] leading-[34px] md:leading-[40px] text-[#1E1E1E]'>
+          <p className='mt-6 font-inter font-medium text-[24px] md:text-[28px] leading-[34px] md:leading-[40px] text-[#1E1E1E]'>
             We design the key pieces that shape{" "}
             <span className='text-brand font-semibold'>
               how people <br className='hidden sm:block' /> see your brand.
@@ -105,14 +105,14 @@ const HelpSection = () => {
               <div
                 key={colIdx}
                 className='p-4 border-b sm:border-b-0 sm:border-r last:border-r-0 last:border-b-0'>
-                <h3 className='font-inter font-medium text-sm text-black mb-4'>
+                <h3 className='font-inter font-light text-[12px] text-black mb-4'>
                   {col.title}
                 </h3>
                 <ul className='space-y-2'>
                   {col.items.map((item, i) => (
                     <li
                       key={i}
-                      className='flex justify-between text-[14px] text-[#4B5563] font-inter'>
+                      className='font-extralight flex justify-between text-[14px] text-[#4B5563]'>
                       <span>{item.service}</span>
                       <span>{item.duration}</span>
                     </li>

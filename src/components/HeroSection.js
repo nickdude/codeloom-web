@@ -39,7 +39,7 @@ const HeroSection = () => {
 
         {/* Main Heading */}
         <HeroRotatingText />
-        <p className='font-inter font-extralight text-[16px] leading-[24px] max-w-2xl mx-auto mt-6 text-brandDark'>
+        <p className='font-normal text-[14px] leading-[24px] max-w-xl mx-auto mt-6 text-brandDark'>
           At Codeloom.Studio, we bring together thoughtful design, robust
           development, and result-driven marketing to craft websites and apps
           that not only look great but also attract, convert, and help your

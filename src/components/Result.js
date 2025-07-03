@@ -36,7 +36,7 @@ const Result = () => {
             Our Results
           </button>
 
-          <h2 className='text-3xl sm:text-xxl font-medium mb-4 mt-8'>
+          <h2 className='text-3xl sm:text-xxl font-medium mb-4 mt-6'>
             We design for <span className='text-orange-500'>people first</span>{" "}
             and results follow!
           </h2>

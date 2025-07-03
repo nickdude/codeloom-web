@@ -17,7 +17,13 @@ const Navbar = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const navbarHeight = 80;
+      let navbarHeight = 80; // Default navbar height
+
+      // Add extra offset for tech-stack section to scroll it up more
+      if (sectionId === "tech-stack") {
+        navbarHeight = 10; // Increased offset for tech-stack
+      }
+
       const elementPosition = element.offsetTop - navbarHeight;
 
       window.scrollTo({

@@ -18,21 +18,21 @@ const ToolsSection = () => {
       </Helmet>
       <section
         id='tech-stack'
-        className='w-full px-4 sm:px-8 py-14 bg-white items-center flex flex-col'>
+        className='w-full px-4 sm:px-8 py-14 bg-white items-center flex flex-col text-center'>
         <button className='bg-white text-black border border-brand font-inter font-medium text-[12px] leading-[16px] px-5 py-2 rounded-md hover:bg-gray-100 transition'>
           Our Tech Stack
         </button>
         {/* Heading */}
-        <h2 className='text-2xl sm:text-3xl md:text-4xl font-semibold text-center my-10 leading-snug'>
+        <h2 className='mt-6 font-inter font-medium text-[24px] md:text-[28px] leading-[34px] md:leading-[40px] text-[#1E1E1E]'>
           We design the key pieces that shape{" "}
-          <span className='text-[#FF5722]'>
+          <span className='text-brand font-semibold'>
             how people <br />
             see your brand.
           </span>
         </h2>
 
         {/* Grid Section */}
-        <div className='grid grid-cols-1 md:grid-cols-3 border rounded-xl p-6 sm:p-10 max-w-7xl mx-auto'>
+        <div className='grid grid-cols-1 md:grid-cols-3 border rounded-xl p-6 sm:p-10 max-w-7xl mx-auto mt-12'>
           {/* Column 1 */}
           <div className='md:pr-10 md:border-r border-gray-300'>
             <h3 className='text-xs uppercase text-gray-700 font-medium mb-4'>
