@@ -36,11 +36,12 @@ const Result = () => {
             Our Results
           </button>
 
-          <h2 className='text-3xl sm:text-xxl font-medium mb-4 mt-6'>
-            We design for <span className='text-orange-500'>people first</span>{" "}
-            and results follow!
+          <h2 className='mt-6 font-inter font-medium text-[24px] md:text-[28px] leading-[34px] md:leading-[40px] text-[#1E1E1E]'>
+            We design for{" "}
+            <span className='text-brand font-semibold'>people first</span> and
+            results follow!
           </h2>
-          <p className='text-gray-600 font-light text-sm max-w-2xl mx-auto'>
+          <p className='text-gray-600 font-light text-sm max-w-2xl mx-auto mt-2'>
             Discover how we empowered businesses to achieve up to <br />
             <span className='text-black font-semibold'>
               272% higher conversions and unmatched ROI.
