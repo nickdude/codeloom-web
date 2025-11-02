@@ -34,3 +34,33 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## SEO & static files added
+
+During the Next.js port a few SEO assets were added to help search engines and social previews:
+
+- `app/layout.js` now exports richer `metadata` (Open Graph, Twitter card, icons, keywords) and injects a JSON-LD Organization schema.
+- `public/robots.txt` was added and points to `https://codeloom.studio/sitemap.xml`.
+- `public/sitemap.xml` was added with basic URL entries for the main anchors.
+
+Notes:
+- The Open Graph image currently references `/assets/og-image.png` which you can generate from the existing `/assets/result.svg` using the included script.
+
+Generate OG image (recommended):
+
+```bash
+cd codeloom-next
+npm install
+npm run generate-og
+```
+
+This will create `public/assets/og-image.png` (1200x630) from `public/assets/result.svg` using `sharp`.
+- If you want automated sitemaps, I can add a build-time sitemap generator next.
+
+How to run locally:
+
+```bash
+cd codeloom-next
+npm install
+npm run dev
+```

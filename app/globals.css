@@ -1,26 +1,170 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* make in-page anchor clicks smooth */
+html {
+    scroll-behavior: smooth;
+}
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --brand: #F54A00;
+    /* codeloom orange */
+    --darkest-gray: #111827;
+    --dark-blue: #0f172a;
+    --light-gray: #9CA3AF;
+    --lightest-pink: #FFF3F2;
+    --radius: 12px;
+    --card-shadow: 0 6px 20px rgba(16, 24, 40, 0.06);
+    --container-max: 1120px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@layer base {
+
+    /* small utility mappings used by components */
+    .text-brand {
+        color: var(--brand);
+    }
+
+    .bg-brand {
+        background-color: var(--brand);
+    }
+
+    .text-darkestGray {
+        color: var(--darkest-gray);
+    }
+
+    .text-darkBlue {
+        color: var(--dark-blue);
+    }
+
+    .text-lightGray {
+        color: var(--light-gray);
+    }
+
+    .bg-lightestPink {
+        background-color: var(--lightest-pink);
+    }
+
+    .bg-lightestPinkTransparent {
+        background-color: rgba(255, 243, 242, 0.6);
+    }
+
+    .font-inter {
+        font-family: ui-sans-serif, system-ui, -apple-system, 'Inter', 'Helvetica Neue', Arial;
+    }
+
+    .font-hanken {
+        font-family: 'Hanken Grotesk', ui-sans-serif, system-ui;
+    }
+
+    .font-grotesk {
+        font-family: 'Hanken Grotesk', ui-sans-serif, system-ui;
+    }
+
+    .border-lightGray {
+        border-color: var(--light-gray);
+    }
+
+    .border-lightBrand {
+        border-color: var(--brand);
+    }
+
+    .grayish {
+        color: #8b8b8b;
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    /* Card utility for consistent panels */
+    .card {
+        background: white;
+        border-radius: var(--radius);
+        box-shadow: var(--card-shadow);
+        border: 1px solid rgba(0, 0, 0, 0.04);
+        padding: 1.25rem;
+        /* 20px */
+    }
+
+    /* Container to horizontally constrain content */
+    .container-max {
+        max-width: var(--container-max);
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* Button helper classes for any non-Button elements */
+    .btn-primary {
+        background: var(--brand);
+        color: white;
+        border-radius: 10px;
+        padding: 0.6rem 1.2rem;
+    }
+
+    .btn-secondary {
+        background: white;
+        border: 1px solid var(--brand);
+        color: var(--darkest-gray);
+        border-radius: 10px;
+        padding: 0.6rem 1.2rem;
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* small reset and helper from original test.css */
+* {
+    margin: 0;
+    padding: 0;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.quoteImg {
+    top: -17px;
+    left: -22px;
+    width: 40px;
+}
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Hanken+Grotesk:wght@400;500;700&display=swap');
+
+/* small helper classes for animations referenced by components */
+.animate-spin-slow {
+    animation: spin 6s linear infinite;
+}
+
+.animate-scroll {
+    animation: scroll 20s linear infinite;
+}
+
+.animate-fadeIn {
+    animation: fadeIn 200ms ease-out forwards;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
