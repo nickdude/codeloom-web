@@ -7,7 +7,9 @@
     "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint",
-    "generate-og": "node scripts/generate-og.js"
+    "generate-og": "node scripts/generate-og.js",
+    "validate-seo": "node scripts/validate-seo.js",
+    "postbuild": "echo 'Build complete! Run validate-seo to check SEO setup.'"
   },
   "dependencies": {
     "framer-motion": "^12.23.24",
