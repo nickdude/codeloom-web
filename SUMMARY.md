@@ -86,7 +86,7 @@ echo "NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX" > .env.local
 4. Get verification code and add to `app/layout.js`:
    ```javascript
    verification: {
-     google: "your-code-here",
+     google: "googledccb23aa51cf918f.html",
    }
    ```
 5. Submit sitemap: `https://codeloom.studio/sitemap.xml`

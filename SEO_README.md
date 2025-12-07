@@ -37,7 +37,7 @@ Get your GA ID from: https://analytics.google.com
 4. Add the verification code to `app/layout.js`:
    ```javascript
    verification: {
-     google: "your-verification-code-here"
+     google: "googledccb23aa51cf918f.html"
    }
    ```
 5. Submit sitemap: `https://codeloom.studio/sitemap.xml`

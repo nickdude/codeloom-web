@@ -181,10 +181,7 @@ export const metadata = {
     canonical: "https://codeloom.studio",
   },
   verification: {
-    // Add your verification codes here when you get them
-    // google: "your-google-verification-code",
-    // yandex: "your-yandex-verification-code",
-    // yahoo: "your-yahoo-verification-code",
+    google: "googledccb23aa51cf918f.html",
   },
 };
 

@@ -9,6 +9,7 @@
     "lint": "eslint",
     "generate-og": "node scripts/generate-og.js",
     "validate-seo": "node scripts/validate-seo.js",
+    "check-gsc": "node scripts/check-search-console-ready.js",
     "postbuild": "echo 'Build complete! Run validate-seo to check SEO setup.'"
   },
   "dependencies": {
